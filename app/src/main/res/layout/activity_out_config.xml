@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tmikulsk1.pdeacttable_osc.InConfig"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Options > Preferences... > Control/OSC/web  Add > Receive on port  - Host IP:"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PORT:"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/out_port"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:inputType="number"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP:"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <EditText
+            android:id="@+id/host_ip"
+            android:layout_width="125sp"
+            android:layout_height="40sp"
+            android:inputType="number"
+            android:digits="1234567890."
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/set_configs_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"/>
+
+    </LinearLayout>
+
+</LinearLayout>
